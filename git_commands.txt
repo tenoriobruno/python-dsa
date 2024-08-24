@@ -1,4 +1,28 @@
 Para usar o git é preciso fornecer a branch inicial e também um user e email. Isso é preciso para o git saber quem fez o que em cada arquivo versionado.
-git config --global user.name "Bruno Tenório"
-git config --global user.email bruno.tenorio1@gmail.com
+git config --global user.name "User"
+git config --global user.email user@gmail.com
 git config --global init.default branch main
+No diretório que será o seu repo git, vc precisa inicializar o git e vai criar um diretório .git onde o git vai guardar os snapshots dos seus arquivos
+
+
+
+
+
+
+
+Para fazer um push de um repositório git para a cloud (github) é precioso criar um repo no próprio github. O push para o github pode ser feito com um checkout do repo github e depois um push, ou por um push a partir de um repo git existente (git remote add origin https://github.com/.../...)
+
+git branch -M main
+
+git push -u origin main
+Para fazer esse push o github vai pedir uma autenticação (para saber que de fato é vc dono do repo) para fazer o push. Contudo, o suporte para push com user/senha foi removido e ocorrerá um erro. Para enviar, é preciso de um token.
+
+crie um personal access tokens (tokens classic). Para esse token, marque todas as opções de acesso para esse token e crie o token. Copie o token gerado em bloco de notas pq essa tela só aparece durante a criação do token. Agora, quando vc for logar, a sua senha será o seu token!!!
+
+
+
+
+
+
+
+
